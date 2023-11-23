@@ -47,12 +47,24 @@ main {
     margin-top: 20px;
 }
 
+/* Images Heading */
+#images h2 {
+    text-align: left; /* Align heading text to the left */
+}
+
 /* Images section */
 #images {
+    text-align: center;
     color: #0C4925;
     margin-top: 20px;
     max-width: 100%;
     height: auto;
+}
+
+figure {
+    display: inline-block;
+    margin: 10px; /* Optional: Horizontal margin for better spacing between figures */
+    text-align: left; /* Reset text-align for content inside the figure */
 }
 
 figcaption {
