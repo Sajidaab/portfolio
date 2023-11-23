@@ -1,0 +1,129 @@
+/* Background color */
+body {
+    background-color: #FBF5EA; 
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #FBF5EA;
+    color: #F06EA9;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: 'Satisfy', cursive, sans-serif; /* Use Satisfy if available, otherwise use cursive, and if that's not available, use a generic sans-serif font */
+    font-style: italic; /* Ensure italic style */
+    margin: 0;
+}
+
+nav ul li {
+    font-family: 'Playfair Display', serif; /* Use Times New Roman if available, otherwise use a generic serif font */
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Main content styles */
+main {
+    font-family: 'Playfair Display', serif; /* Use Times New Roman if available, otherwise use a generic serif font */
+    padding: 100px;
+}
+
+/* About Me section */
+#about-me > h2 {
+    color: #0C4925;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/* Hobbies section */
+#hobbies > h2 {
+    color: #0C4925;
+    margin-top: 20px;
+}
+
+/* Images section */
+#images {
+    color: #0C4925;
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: #0C4925;
+    font-family: 'Nunito Sans', sans-serif; 
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Table section */
+#table {
+    color: #0C4925;
+    margin-top: 20px;   
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid #0C4925;
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    background-color: #0C4925;
+    color: #FBF5EA;
+}
+
+
+/* Conclusion section */
+h4 {
+    color: #0C4925;
+    margin-top: 20px;
+}
+
+/* Contact Information section */
+#contact {
+    color: #0C4925;
+    margin-top: 20px;
+}
+ #contact-content {
+    color: #0C4925;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh; 
+}
+
+/* Footer styles */
+footer {
+    font-size: 2em;
+    font-family: 'Satisfy', cursive, sans-serif; /* Use Satisfy if available, otherwise use cursive, and if that's not available, use a generic sans-serif font */
+    font-style: italic; /* Ensure italic style */
+    background-color: #FBF5EA;
+    color: #F06EA9;
+    padding: 0px;
+    text-align: center;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    header, body, footer {
+        background-color: #ffffff;
+    }
+    h1 {
+        font-size: 2em; 
+    }   
+}
