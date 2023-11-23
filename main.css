@@ -99,24 +99,32 @@ th {
 
 
 /* Conclusion section */
-h4 {
+h2 {
     color: #0C4925;
     margin-top: 20px;
 }
 
 /* Contact Information section */
+
+/* Apply styles to the Contact Information section */
 #contact {
+    text-align: center; /* Center-align text */
     color: #0C4925;
     margin-top: 20px;
+
 }
- #contact-content {
-    color: #0C4925;
-    margin-top: 20px;
+
+/* Apply styles to the contact content container */
+#contact-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-height: 10vh; 
+    align-items: center; /* Center-align content */
+    text-align: left; /* Align text within the container to the left */
+}
+
+#contact h2 {
+    text-align: left; /* Align heading text to the left */
 }
 
 /* Footer styles */
@@ -139,3 +147,4 @@ footer {
         font-size: 2em; 
     }   
 }
+
