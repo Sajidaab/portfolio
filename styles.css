@@ -1,61 +1,102 @@
-/* Background color */
+/* General Styles */
 body {
-    background-color: #FBF5EA; 
+    background-color: #FBF5EA;
     font-family: Arial, sans-serif;
     line-height: 1.2;
     margin: 0;
     padding: 0;
 }
 
-/* Header styles */
+/* Logo Styles */
+#logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 15px;
+    display: flex;
+}
+
+/* Header Styles */
 header {
     background-color: #FBF5EA;
     color: #F06EA9;
     padding: 10px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
+/* Button Hover Effect */
+#btn-counter:hover {
+    background-color: #F06EA9; /* Change to a different color on hover */
+}
+
+/* Counter Text Styles */
+#txt-counter {
+    color: black; /* Default color */
+}
+
+#txt-counter.even {
+    color: green;
+}
+
+#txt-counter.odd {
+    color: red;
+}
+
+/* Navigation Styles */
 h1 {
-    font-size: 5em;
-    font-family: 'Satisfy', cursive, sans-serif; /* Use Satisfy if available, otherwise use cursive, and if that's not available, use a generic sans-serif font */
-    font-style: italic; /* Ensure italic style */
+    font-size: 4em;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
     margin: 0;
+    white-space: nowrap;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
 
 nav ul li {
-    font-family: 'Playfair Display', serif; /* Use Times New Roman if available, otherwise use a generic serif font */
     display: inline;
     margin-right: 10px;
+    white-space: nowrap;
 }
 
-/* Main content styles */
+/* Navigation Links Animation */
+nav li a {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Main Content Styles */
 main {
-    font-family: 'Playfair Display', serif; /* Use Times New Roman if available, otherwise use a generic serif font */
     padding: 100px;
 }
 
-/* About Me section */
+/* About Me Section Styles */
 #about-me > h2 {
-    color: #0C4925;
     border-bottom: 2px solid #ddd;
     padding-bottom: 20px;
 }
 
-/* Hobbies section */
+/* Hobbies Section Styles */
 #hobbies > h2 {
-    color: #0C4925;
     margin-top: 20px;
 }
 
-/* Images Heading */
+/* Images Section Heading Styles */
 #images h2 {
-    text-align: left; /* Align heading text to the left */
+    text-align: left;
 }
 
-/* Images section */
+/* Images Section Styles */
 #images {
     text-align: center;
-    color: #0C4925;
     margin-top: 20px;
     max-width: 100%;
     height: auto;
@@ -63,88 +104,112 @@ main {
 
 figure {
     display: inline-block;
-    margin: 10px; /* Optional: Horizontal margin for better spacing between figures */
-    text-align: left; /* Reset text-align for content inside the figure */
+    margin: 10px 10px 10px 0;
+    text-align: left;
 }
 
 figcaption {
-    color: #0C4925;
-    font-family: 'Nunito Sans', sans-serif; 
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     font-style: italic;
     margin-top: 10px;
 }
 
-/* Table section */
+/* Table Section Styles */
 #table {
-    color: #0C4925;
-    margin-top: 20px;   
+    margin-top: 20px;
+    text-align: center;
 }
 
 table {
     border-collapse: collapse;
-    width: 100%;
+    width: 60%;
+    margin: 20px auto;
 }
 
 th, td {
-    border: 2px solid #0C4925;
-    padding: 5px;
+    border: 2px solid #000000;
+    padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #0C4925;
+    background-color: #F06EA9;
     color: #FBF5EA;
 }
 
+/* Table Row Hover Effect */
+tr:hover {
+    background-color: #f3bdd5; /* Pink highlight */
+    transition: background-color 0.3s ease-in-out;
+}
 
-/* Conclusion section */
+/* Margin Between Sections */
+#contact,
+#table,
+#images,
+#conclusion {
+    margin-bottom: 20px;
+}
+
+/* Conclusion Section Styles */
 h2 {
-    color: #0C4925;
     margin-top: 20px;
 }
 
-/* Contact Information section */
-
-/* Apply styles to the Contact Information section */
+/* Contact Information Section Styles */
 #contact {
-    text-align: center; /* Center-align text */
-    color: #0C4925;
+    text-align: left;
     margin-top: 20px;
-
 }
 
-/* Apply styles to the contact content container */
+/* Contact Link Hover Effect */
+#contact a:hover {
+    color: #F06EA9;
+}
+
+/* Contact Content Container Styles */
 #contact-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center-align content */
-    text-align: left; /* Align text within the container to the left */
+    align-items: center;
+    text-align: left;
 }
 
-#contact h2 {
-    text-align: left; /* Align heading text to the left */
+/* Contact Content Fade In Animation */
+#contact-content {
+    animation: fadeIn 1s ease-in-out;
 }
 
-/* Footer styles */
+/* Footer Styles */
 footer {
     font-size: 2em;
-    font-family: 'Satisfy', cursive, sans-serif; /* Use Satisfy if available, otherwise use cursive, and if that's not available, use a generic sans-serif font */
-    font-style: italic; /* Ensure italic style */
+    font-family: 'Lato', sans-serif;
     background-color: #FBF5EA;
     color: #F06EA9;
-    padding: 0px;
+    padding: 0;
     text-align: center;
 }
 
-/* Mobile styles */
+/* Mobile Styles */
 @media only screen and (max-width: 600px) {
     header, body, footer {
         background-color: #ffffff;
     }
+
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 5px;
+    }
+
     h1 {
-        font-size: 2em; 
-    }   
+        font-size: 4em;
+        white-space: nowrap;
+    }
 }
+
 

@@ -3,58 +3,84 @@
 
 <head>
     <!-- Metadata section -->
-    <link href="styles.css" rel="stylesheet" />
     <meta charset="UTF-8">
-    <meta name="CPRG 219- Lab 2" content="Using HTML with Version Control">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Using HTML with Version Control">
     <meta name="author" content="Sajida Aboudaye">
     <title>Lab 2 - About me</title>
+    <!--Web Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- Linking to css file -->
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Alert button section -->
+    <div><section id="alertButtonSection">
+        <!-- Your alert button content goes here -->
+    </section></div>
+
+
+    <!-- Incrementing button section -->
+   <div><section id="incrementingButtonSection">
+        <!-- Your incrementing button content goes here -->
+    </section></div>
+
     <!-- Header section with the title -->
     <header>
-        <h1>Welcome to My Page</h1>
+        <img src="C:\Users\sajid\OneDrive\Personal Projects\Sticker PNGS\LOGO.png" alt="My Logo" id="logo">
+        <h1>Sajida Aboudaye</h1>
+    
+        <!--Navigation Links-->
         <nav>
-            <!-- Navigation links -->
+            <section id="navlinks"></section>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contact">Contact Information</a></li>
             </ul>
         </nav>
+        <button id="alertButton">Hi!</button>
+        <button id="btn-counter">How many times can you click?</button>
+        <p id="txt-counter">Number: 1</p>
+
     </header>
 
     <main>
         <!-- About Me section -->
         <section id="about-me">
             <h2>About Me</h2>
-            <p>My name is Sajida, I am Lebanese of origins, and have lived in Canada for the past 9 years. One of my favourite people to spend time with would be my nephew Adnan. I also love taking care of my 4 years old cat Leo. Beyond my affection for my four-legged friend, some of my hobbies consist of mainly arts, such as painting, photography, designing, content creation, as well as travelling. My future goals is to live surrounded by my family, be a successful graphic designer, and explore and capture the world through my lens.  </p>
+            <p>My name is Sajida, I am Lebanese of origins, and have lived in Canada for the past 9 years. One of my favourite people to spend time with would be my nephew Adnan. I also love taking care of my 4 years old cat Leo. Beyond my affection for my four-legged friend, some of my hobbies consist of mainly arts, such as painting, photography, designing, content creation, as well as travelling. My future goals are to live surrounded by my family, be a successful graphic designer, and explore and capture the world through my lens.</p>
         </section>
 
         <!-- Hobbies section -->
         <section id="hobbies">
             <h2>Hobbies</h2>
-            <p>As stated earlier, spending time with Adnan and Leo are two of the things I enjoy doing, so I would like to provide you with two images of my relevant experience down in the Images Section</p>
+            <p>As stated earlier, spending time with Adnan and Leo are two of the things I enjoy doing, so I would like to provide you with two images of my relevant experience down in the Images section</p>
         </section>
 
         <!-- Images section -->
         <section id="images">
             <h2>Images</h2>
-         <figure>
-            <img src="https://live.staticflickr.com/65535/53303200937_0a00e1dfef_n.jpg" alt="Adnan with dog">
-            <figcaption>Adnan with a dog he met in Banff</figcaption>
-        </figure>
+            <figure>
+                <img src="https://live.staticflickr.com/65535/53303200937_0a00e1dfef_n.jpg" alt="Adnan with dog">
+                <figcaption>Adnan with a dog he met in Banff</figcaption>
+            </figure>
 
-        <figure>
-            <img src="https://live.staticflickr.com/65535/53304311698_c5912216df_n.jpg" alt="Me & Adnan">
-            <figcaption>Me and Adnan at his first camping experience </figcaption>
-        </figure>
-       
-        <figure>
-            <img src="https://live.staticflickr.com/65535/53303204172_c52e3451bb_n.jpg" alt="My cat Leo">
-            <figcaption>Leo staring at me as I eat my chocolate bar</figcaption>
-        </figure>
-         </section>
+            <figure>
+                <img src="https://live.staticflickr.com/65535/53304311698_c5912216df_n.jpg" alt="Me & Adnan">
+                <figcaption>Me and Adnan at his first camping experience </figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://live.staticflickr.com/65535/53303204172_c52e3451bb_n.jpg" alt="My cat Leo">
+                <figcaption>Leo staring at me as I eat my chocolate bar</figcaption>
+            </figure>
+        </section>
 
         <!-- Table content here -->
         <section id="table">
@@ -68,11 +94,11 @@
                     <td>Affectionate companions</td>
                     <td>None</td>
                 </tr>
-                 <tr>
-                     <td>Entertaining playmates</td>
+                <tr>
+                    <td>Entertaining playmates</td>
                     <td>None</td>
-                 </tr>
-                 <tr>
+                </tr>
+                <tr>
                     <td>Stress reduction</td>
                     <td>None</td>
                 </tr>
@@ -80,28 +106,33 @@
                     <td>Independent</td>
                     <td>None</td>
                 </tr>
-        </table>
+            </table>
         </section>
 
-        <section>
+        <section id="conclusion">
             <h2>Conclusion?</h2>
             <p>In conclusion, it seems that cats come with a 'no-disadvantage' label, making them the purr-fect addition to any home, therefore everyone should own at least one ;D </p>
         </section>
 
         <!-- Contact Information section -->
         <section id="contact">
-            <h2>Contact Information</h2>
+            <h2>Contact Me</h2>
             <div id="contact-content">
-            <a href="https://www.linkedin.com/in/sajida-aboudaye-452788295/">LinkedIn Profile</a>
+                <a href="https://www.linkedin.com/in/sajida-aboudaye-452788295/">LinkedIn Profile</a>
             </div>
         </section>
     </main>
 
     <!-- Footer section with copyright information -->
     <footer>
-        <p>&copy; 2023 Sajida Aboudaye</p>
+        <p id="footer-text">&copy; 2023 Sajida Aboudaye</p>
     </footer>
 
+    <!-- Linking to JavaScript file -->
+    <script src="base.js"></script>
+
 </body>
+
 </html>
+
 
