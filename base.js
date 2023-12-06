@@ -47,3 +47,24 @@ btnCounter.addEventListener('mouseleave', function() {
     btnCounter.style.backgroundColor = ''; // Revert to the default color on mouseleave
     btnCounter.textContent = 'How many times can you click?'
 });
+
+// Create a new ordered list with id "numbers" in HTML
+const orderedList = document.createElement('ol');
+orderedList.id = 'numbers';
+
+// Append the ordered list to the body or any other parent element
+document.body.appendChild(orderedList);
+
+// Using a for loop to populate the ordered list with 100 child elements
+for (let i = 1; i <= 100; i++) {
+  const listItem = document.createElement('li');
+  listItem.textContent = `${i} - ${i % 2 === 0 ? 'even' : 'odd'}`;
+  listItem.style.color = i % 2 === 0 ? 'green' : 'red';
+  orderedList.appendChild(listItem);
+}
+
+// Append the ordered list to the "numbers-container" within the "main" section
+const numbersContainer = document.getElementById('numbers-container');
+numbersContainer.appendChild(orderedList);
+
+

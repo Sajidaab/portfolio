@@ -84,6 +84,12 @@ main {
     padding-bottom: 20px;
 }
 
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Hobbies Section Styles */
 #hobbies > h2 {
     margin-top: 20px;
@@ -157,6 +163,28 @@ h2 {
     margin-top: 20px;
 }
 
+/* Add a style for the numbers container */
+#numbers-container {
+    margin-top: 20px; 
+  }
+  
+  /* Style the ordered list */
+  #numbers {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Style the list items */
+  #numbers li {
+    margin: 5px; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+  }
+  
+
 /* Contact Information Section Styles */
 #contact {
     text-align: left;
@@ -207,7 +235,7 @@ footer {
     }
 
     h1 {
-        font-size: 4em;
+        font-size: 2.5em;
         white-space: nowrap;
     }
 }
